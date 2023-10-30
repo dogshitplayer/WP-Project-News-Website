@@ -28,6 +28,11 @@ button[type="submit"] {
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
+	transition: all 0.25s ease-in-out;
+}
+button[type="submit"]:hover {
+	background-color: #46a049;
+	box-shadow: 0px 0px 5px #0000002d;
 }
 
 #results {
@@ -35,3 +40,124 @@ button[type="submit"] {
 	padding: 20px;
 	background-color: #f2f2f2;
 }
+/* Style for articles */
+.article {
+	margin: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	transition: all 0.25s ease-in-out;
+  }
+
+  .article:hover {
+	
+	border: 1.5px solid #717171;
+	box-shadow: 0px 0px 5px #0000002d;
+	
+  }
+  
+  .article a {
+	text-decoration: none;
+	font-weight: bold;
+	
+  }
+  
+  .article a:hover {
+	text-decoration: underline;
+  }
+  .article {
+	display: grid;
+	grid-template-columns: 75% auto; /* Two equal columns */
+	grid-template-rows: auto auto auto auto; /* Two rows with auto height */
+	gap: 5px; /* Adjust the gap as needed */
+  
+	/* Add other styling as desired */
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: 10px;
+  }
+  
+  .article a {
+	 /* Span both columns for the title */
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none;
+	grid-column: 1; /* Place the image in the second column */
+	grid-row: 1;
+  }
+  .source-name {
+	font-size: 14px;
+	color: #4CAF50;
+	grid-column: 1; /* Place the image in the second column */
+	grid-row: 2;
+  }
+  
+  .article-description {
+	font-size: 14px;
+	grid-column: 1; /* Place the image in the second column */
+	grid-row: 3;
+  }
+  .publishedAt {
+	font-size: 14px;
+	color: #676967;
+	grid-column: 1; /* Place the image in the second column */
+	grid-row: 4;
+  }
+  
+  .article-image {
+	max-width: auto;
+	height: 150px;
+	grid-column: 2; /* Place the image in the second column */
+	grid-row: span 4; /* Span two rows for the image */
+	align-self: right; 
+	border-radius: 5px;
+  }
+
+  /* Style the select dropdown */
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px; /* Adjust the width as needed */
+	box-shadow: 0px 0px 5px #ccc;
+}
+
+/* Style the "Next Page" button */
+.pagination button.next-page {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px; /* Add some margin to separate the buttons */
+	transition: all 0.25s ease-in-out;
+}
+
+/* Style the "Previous Page" button */
+.pagination button.prev-page {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px; /* Add some margin to separate the buttons */
+	transition: all 0.25s ease-in-out;
+}
+
+/* Style the "Next Page" and "Previous Page" buttons on hover */
+.pagination button.next-page:hover,
+.pagination button.prev-page:hover {
+    background-color: #0056b3;
+	box-shadow: 0px 0px 5px #000000;
+}
+
+
+
+  
+  
