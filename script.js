@@ -20,11 +20,11 @@ function searchArticles(page = 1, sortBy = 'relevancy') {
     fetch(apiUrl,
           {
               headers: {
-                  'Origin': 'http://localhost:4000/',
+                  'Origin': 'http://localhost:4000',
                   'Referer': 'http://localhost:4000/'
               }
           }
-         0)
+         )
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
