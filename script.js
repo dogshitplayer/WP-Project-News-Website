@@ -17,7 +17,14 @@ function searchArticles(page = 1, sortBy = 'relevancy') {
     const apiKey = '7c9ee76d2af3400ba350d65071f10311';
     const apiUrl = `https://newsapi.org/v2/everything?q=${searchQuery}&apiKey=${apiKey}&page=${page}&sortBy=${sortBy}`;
 
-    fetch(apiUrl)
+    fetch(apiUrl,
+          {
+              headers: {
+                  'Origin': 'http://localhost:4000/',
+                  'Referer': 'http://localhost:4000/'
+              }
+          }
+         0)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
